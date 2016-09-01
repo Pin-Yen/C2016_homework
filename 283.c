@@ -8,9 +8,9 @@ int main()
 	while(scanf("%d %d %d",&head, &leg, &tail) == 3){
 		//chickens & rabbits both have tails, only crabs don't
 		crab = head - tail;
-		
+
 		//remaining leg
-		leg - crab*8; 
+		leg = leg - crab*8; 
 
 		// chick + rabb == tail
 		//chick*2 + rabb*4 == leg
