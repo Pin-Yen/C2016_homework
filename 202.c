@@ -57,13 +57,18 @@ void convert(int num, int denom, int* x, int* y, int* z ){
 	*x = (int) (num/denom);
 	*y -= ((*x) * (*z));
 	int commonFactor = HCF(*y,*z);
-	 
 	*y /= commonFactor;
-	if (*y < 0)
-	{
-		*y = -(*y);
-	}
 	*z /= commonFactor;
+
+	if (*x != 0)
+	{
+		*y = abs(*y);
+		*z = abs(*z);
+	}
+	else if(*y > 0 && *z < 0){
+		*y = -(*y);
+		*z = -(*z);
+	}
 }
 
 //returns the Highest Common Factor of a & b
