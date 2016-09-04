@@ -36,7 +36,7 @@ int main(){
 					lotNo = k;
 				}
 				// if two lot have the same distance
-				else if(dist = minDist){
+				else if(dist == minDist){
 					// compare X coordinates first
 					if (xCoor[k] < xCoor[lotNo])
 					{
