@@ -4,6 +4,7 @@
 #include <limits.h>
 
 int main(){
+	//test
 	int* xCoor, *yCoor, *cap, *occup;
 	int lots, bikes;
 	scanf("%d", &lots);
