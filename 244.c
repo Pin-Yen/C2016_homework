@@ -27,8 +27,9 @@ int main(){
 			{
 				if (receptNo % i == fstPrNo[pr])
 				{
-					/*
+					
 					totalAward += award[awardIndex];
+					/*
 					if (i < 5)
 					{
 						stampDuty += award[awardIndex] * 0.004;
